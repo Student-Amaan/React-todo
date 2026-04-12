@@ -9,6 +9,9 @@ import About from './Components/About/About.jsx'
 import Header from './Components/Header/Header.jsx'
 import Footer from './Components/Footer/Footer.jsx'
 import Layout from './Layout.jsx'
+import Contact from './contact.jsx/Contact.jsx'
+import Github from './Github/Github.jsx'
+import User from './User/User.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements (
@@ -18,6 +21,9 @@ const router = createBrowserRouter(
       <Route path='about' element={<About/>}/>
       <Route path='header' element={<Header/>}/>
       <Route path='footer' element={<Footer/>}/>
+      <Route path='contact' element={<Contact/>}/>
+      <Route path='github' element={<Github />}/>
+      <Route path='user' element={<User/>}/>
     </Route>
   )
 )
