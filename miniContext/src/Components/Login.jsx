@@ -1,7 +1,7 @@
-import React from 'react'
+import { useState, useContext } from "react";
+import userContext from "./context/UserContext";
 
 function Login() {
-
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
@@ -10,7 +10,6 @@ function Login() {
     e.preventDefault();
     setUser({ userName, password });
   };
-
 
   return (
     <div>
@@ -32,4 +31,4 @@ function Login() {
   );
 }
 
-export default Login
+export default Login;
