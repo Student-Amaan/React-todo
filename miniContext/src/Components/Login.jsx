@@ -12,21 +12,23 @@ function Login() {
   };
 
   return (
-    <div>
+    <div className="flex justify-center items-center border-2 bg-amber-400  text-white m-6 p-5 ">
       <h2>Aman aur react</h2>
       <input
+      className="m-6"
         value={userName}
         onChange={(e) => setUserName(e.target.value)}
         type="text"
         placeholder="username"
       />
-      <button
+      <input
         value={password}
         onChange={(e) => setPassword(e.target.value)}
-        onClick={handleSubmit}
-      >
-        Submit
-      </button>
+        type="text"
+        placeholder="password"
+      />
+
+      <button onClick={handleSubmit}>Submit</button>
     </div>
   );
 }
