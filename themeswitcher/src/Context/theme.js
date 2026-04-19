@@ -1,6 +1,7 @@
 import React , {createContext, useContext} from "react";
 
 
+
 export const ThemeContext = createContext({
     themeMode: 'light',
     darkMode: () => {},
@@ -10,5 +11,5 @@ export const ThemeContext = createContext({
 export const ThemeProvider = ThemeContext.Provider
 
 export default function useTheme() {
-    useContext
+    return useContext(ThemeContext)
 }
